@@ -1,0 +1,22 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: var(--color-bg-secondary);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    text-align: center;
+    align-content: center;
+    color: var(--color-font-primary);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (min-width: 576px) {
+    .button-container {
+        justify-content: start;
+    }
+}

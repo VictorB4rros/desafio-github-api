@@ -7,7 +7,7 @@ header {
     padding: 0 40px;
 }
 
-p {
+.header-title {
     color: var(--color-font-primary);
     font-size: 24px;
     font-weight: 500;

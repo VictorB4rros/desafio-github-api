@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="header">
             <nav>
-                <p>Github API</p>
+                <p className="header-title">Github API</p>
             </nav>
         </header>
     );
