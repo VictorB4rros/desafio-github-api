@@ -1,0 +1,30 @@
+.find-main {
+    padding: 54px 20px;
+}
+
+.find-container {
+    background-color: var(--color-card-bg-primary);
+    border: 1px solid red;
+    height: 270px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 46px 0;
+}
+
+.find-title {
+    color: var(--color-font-senary);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+@media (min-width: 576px) {
+    .find-container {
+        justify-content: start;
+        padding: 46px 30px;
+    }
+
+    .find-title {
+        font-size: 38px;
+    }
+}
