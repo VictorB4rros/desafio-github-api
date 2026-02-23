@@ -35,6 +35,10 @@ html, body {
     background-color: var(--color-bg-primary);
 }
 
+input:focus {
+    outline: none;
+}
+
 /*----------------------------------------------------------------------------------------------*/
 /* generic styles */
 

@@ -4,12 +4,16 @@
 
 .find-container {
     background-color: var(--color-card-bg-primary);
-    border: 1px solid red;
     height: 270px;
     border-radius: 16px;
     display: flex;
-    justify-content: center;
-    padding: 46px 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 54px 0;
+}
+
+.find-title-container {
+    margin-bottom: 24px;
 }
 
 .find-title {
@@ -20,11 +24,40 @@
 
 @media (min-width: 576px) {
     .find-container {
-        justify-content: start;
-        padding: 46px 30px;
+        align-items: flex-start;
+        padding: 54px 0 0 30px;
     }
 
     .find-title {
         font-size: 38px;
     }
+
+    .input-container {
+        margin-bottom: 24px;
+    }
+
+    .find-title-container {
+        margin-bottom: 14px;
+    }
+
+    .find-input {
+        width: 300px;
+    }
+}
+
+.input-container {
+    margin-bottom: 30px;
+}
+
+.find-input {
+    height: 40px;
+    width: 250px;
+    padding: 0 17px;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 4px;
+    color: var(--color-font-secondary);
+}
+
+.find-input::placeholder {
+    color: var(--color-font-quaternary);
 }
