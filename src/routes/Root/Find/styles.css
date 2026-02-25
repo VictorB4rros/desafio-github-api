@@ -62,3 +62,63 @@
 .find-input::placeholder {
     color: var(--color-font-quaternary);
 }
+
+.profile-container {
+    background-color: var(--color-card-bg-secondary);
+    border-radius: 8px;
+    padding: 43px 38px;
+    display: flex;
+}
+
+.picture-container {
+    height: 247px;
+    width: 247px;
+    margin-right: 30px;
+}
+
+.profile-pic {
+    max-height: 247px;
+    max-width: 247px;
+}
+
+.profile-info-container {
+    background-color: var(--color-card-bg-tertiary);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 6px;
+    padding: 8px 14px;
+    width: 100%;
+}
+
+.info-title {
+    color: var(--color-font-septenary);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info-line {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 4px;
+    padding: 10px 8px;
+}
+
+.info-key {
+    color: var(--color-font-octonary);
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.info-value-address {
+    color: var(--color-font-nonary);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info-value {
+    color: var(--color-font-octonary);
+    font-size: 16px;
+    font-weight: 400;
+}
