@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import Button from '../../../components/Button';
 import './styles.css';
 
@@ -21,6 +22,9 @@ export default function Find() {
                     <div>
                         <Button />
                     </div>
+                </div>
+                <div>
+                    <Outlet />
                 </div>
             </section>
         </main>
