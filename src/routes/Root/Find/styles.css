@@ -44,18 +44,18 @@
     background-color: var(--color-card-bg-secondary);
     border-radius: 8px;
     padding: 43px 38px;
-    border: 1px solid red;
+    justify-items: center;
 }
 
 .picture-container {
-    height: 247px;
-    width: 247px;
+    height: 208px;
+    width: 208px;
     margin-bottom: 10px;
 }
 
 .profile-pic {
-    max-height: 247px;
-    max-width: 247px;
+    max-height: 208px;
+    max-width: 208px;
 }
 
 .profile-info-container {
@@ -64,6 +64,7 @@
     border-radius: 6px;
     padding: 8px 14px;
     width: 100%;
+    text-align: center;
 }
 
 .info-title {
@@ -92,15 +93,19 @@
     color: var(--color-font-nonary);
     font-size: 16px;
     font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .info-value {
     color: var(--color-font-octonary);
     font-size: 16px;
     font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .find-container {
         align-items: flex-start;
         padding: 54px 0 0 30px;
@@ -124,6 +129,7 @@
 
     .profile-container {
         display: flex;
+        justify-content: flex-start;
     }
 
     .picture-container {
@@ -131,5 +137,19 @@
         margin-right: 30px;
         margin-bottom: 0;
         margin-left: 0;
+    }
+
+    .profile-info-container {
+        text-align: left;
+    }
+
+    .profile-pic {
+        max-height: 247px;
+        max-width: 247px;
+    }
+
+    .picture-container {
+        height: 247px;
+        width: 247px;
     }
 }
