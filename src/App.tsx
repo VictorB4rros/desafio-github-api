@@ -13,6 +13,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="find" element={<Find />} />
         </Route>
+        <Route path="*" element={<Navigate to={"/home"} />} />
       </Routes>
     </BrowserRouter>
   );
