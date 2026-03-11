@@ -8,7 +8,7 @@ export default function Home() {
             <section>
                 <h1 className="home-title">Desafio Github API</h1>
                 <p className="home-subtitle">DevSuperior - Escola de programação</p>
-                <Button />
+                <Button text="Começar" />
             </section>
         </main>
     );

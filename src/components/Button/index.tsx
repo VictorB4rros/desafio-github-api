@@ -1,11 +1,15 @@
 import './styles.css';
 
-export default function Button() {
+type Props = {
+    text: string;
+}
+
+export default function Button({ text }: Props) {
 
     return (
         <div className="button-container">
             <div className="button">
-                Começar
+                {text}
             </div>
         </div>
     );
