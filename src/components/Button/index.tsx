@@ -7,10 +7,8 @@ type Props = {
 export default function Button({ text }: Props) {
 
     return (
-        <div className="button-container">
-            <div className="button">
-                {text}
-            </div>
+        <div className="button">
+            {text}
         </div>
     );
 }
