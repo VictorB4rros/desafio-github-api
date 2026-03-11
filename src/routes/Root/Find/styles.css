@@ -1,3 +1,20 @@
+.find-button {
+    background-color: var(--color-bg-secondary);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    text-align: center;
+    align-content: center;
+    color: var(--color-font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
 .find-main {
     padding: 54px 20px;
 }

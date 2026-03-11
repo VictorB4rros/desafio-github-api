@@ -1,29 +1,33 @@
 import './styles.css';
-import profilePic from '../../assets/profile-picture.png'
+import type { UserDTO } from '../../models/user';
 
-export default function ProfileCard() {
+type Props = {
+    user: UserDTO;
+}
+
+export default function ProfileCard({ user }: Props) {
     return (
         <div className="container profile-container">
             <div className="picture-container">
-                <img className="profile-pic" src={profilePic} alt="Profile picture" />
+                <img className="profile-pic" src={user.avatar_url} alt="Profile picture" />
             </div>
             <div className="profile-info-container">
                 <p className="info-title">Informações</p>
                 <div className="info-line mb-5">
                     <p className="info-key">Perfil:</p>
-                    <p className="info-value-address">https://api.github.com/users/acenelio</p>
+                    <p className="info-value-address">{user.url}</p>
                 </div>
                 <div className="info-line mb-5">
                     <p className="info-key">Seguidores:</p>
-                    <p className="info-value">4379</p>
+                    <p className="info-value">{user.followers}</p>
                 </div>
                 <div className="info-line mb-5">
                     <p className="info-key">Localidade:</p>
-                    <p className="info-value">Brasil</p>
+                    <p className="info-value">{user.location}</p>
                 </div>
                 <div className="info-line">
                     <p className="info-key">Nome:</p>
-                    <p className="info-value">Nelio Alves</p>
+                    <p className="info-value">{user.name}</p>
                 </div>
             </div>
         </div>
