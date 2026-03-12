@@ -10,7 +10,7 @@ type FormData = {
 
 export default function Find() {
 
-    const [username, setUsername] = useState<string>("acenelio");
+    const [username, setUsername] = useState<string>("");
 
     const [formData, setFormData] = useState<FormData>({
         username: ''
@@ -19,7 +19,8 @@ export default function Find() {
     const [user, setUser] = useState<UserDTO>();
 
     useEffect(() => {
-        userService.findUser(username)
+        if (username !== "") {
+            userService.findUser(username)
             .then(response => {
                 setUser(response.data);
             })
@@ -27,6 +28,7 @@ export default function Find() {
                 console.log("Usuário não encontrado");
                 setUser(undefined);
             });
+        }
     }, [username]);
 
     function handleInputChange(event: any) {
@@ -64,7 +66,8 @@ export default function Find() {
 
                 </div>
                 {
-                    user ? <ProfileCard user={user} /> : <h1 className="find-title container">Erro ao buscar usuário</h1>
+                    username &&
+                    (user ? <ProfileCard user={user} /> : <h1 className="find-title container">Erro ao buscar usuário</h1>)
                 }
 
             </section>
