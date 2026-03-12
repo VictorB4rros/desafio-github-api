@@ -25,6 +25,7 @@ export default function Find() {
             })
             .catch(() => {;
                 console.log("Usuário não encontrado");
+                setUser(undefined);
             });
     }, [username]);
 
